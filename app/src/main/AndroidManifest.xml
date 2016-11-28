@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.juserzhang.gridview">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/zhuomian"
+        android:label="九宫格桌面"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MyListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Music.MusicActivity"
+            android:label="音乐播放器">
+        </activity>
+
+        <service
+            android:name=".Music.MusicService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
+        <activity
+            android:name=".Video.VideoActivity"
+            android:label="视频播放器">
+        </activity>
+        <activity
+            android:name=".Picture.PictureActivity"
+            android:label="图片浏览器">
+        </activity>
+        <activity
+            android:name=".Calendar.CalendarActivity"
+            android:label="日历">
+        </activity>
+        <activity
+            android:name=".Second.SecondActivity"
+            android:label="秒表">
+        </activity>
+        <activity
+            android:name=".Clock.ClockActivity"
+            android:label="时钟">
+        </activity>
+        <activity
+            android:name=".Calc.CalcActivity"
+            android:label="计算器">
+        </activity>
+        <activity
+            android:name=".RatingBar.RatingBarActivity"
+            android:label="评分条">
+        </activity>
+        <activity
+            android:name=".Record.RecordActivity"
+            android:label="录音">
+
+        </activity>
+    </application>
+
+</manifest>

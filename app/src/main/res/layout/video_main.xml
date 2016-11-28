@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView
+        android:id="@+id/myTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:text="视频播放器！"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <SurfaceView
+        android:layout_below="@id/myTextView1"
+        android:id="@+id/mSurfaceView1"
+        android:layout_width="match_parent"
+        android:layout_height="260dp">
+    </SurfaceView>
+
+    <SeekBar
+        android:layout_below="@id/mSurfaceView1"
+        android:id="@+id/seekBar"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <TextView
+        android:layout_below="@id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/VideoTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    "/>
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/VideoTime"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        >
+        <ImageButton
+            android:id="@+id/playorpause"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:src="@drawable/play_64"
+            />
+        <ImageButton android:id="@+id/reset"
+                     android:layout_toEndOf="@id/playorpause"
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:src="@drawable/replay"
+            />
+        <ImageButton android:id="@+id/stop"
+                     android:layout_toEndOf="@id/reset"
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:src="@drawable/stop_64"
+            />
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退  出"
+        android:id="@+id/BtnQuit2"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
